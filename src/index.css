@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #fff;
+}
+
+.bgimage {
+  background: url("/hero-momos.jpg");
+  background-position: center;
+  background-size: cover;
+}
