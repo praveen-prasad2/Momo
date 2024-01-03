@@ -11,3 +11,17 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+.truck-img-1 {
+  background: url("/image-truck.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.blobYellow {
+  background: url("/blob1.svg");
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}

@@ -9,7 +9,9 @@ const SignatureFood = () => {
           Our Few Signatures
         </h1>
       </div>
-      <div className="flex gap-4 items-center justify-center overflow-hidden">
+      <div className="flex gap-4 items-center justify-center flex-wrap">
+        <SignatureFoodCard />
+        <SignatureFoodCard />
         <SignatureFoodCard />
         <SignatureFoodCard />
       </div>
