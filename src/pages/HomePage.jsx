@@ -4,7 +4,7 @@ import AboutMomoWagon from "../components/Homepage/AboutMomoWagon";
 import SignatureFood from "../components/Homepage/SignatureFood";
 import DiningExperience from "../components/Homepage/DiningExperience";
 import VoicesOfSatisfaction from "../components/Homepage/VoicesOfSatisfaction";
-import GetInTouch from "../components/Homepage/GetInTouch";
+import GetInTouchContainer from "../components/Homepage/GetInTouchContainer";
 
 const HomePage = () => {
   return (
@@ -14,7 +14,7 @@ const HomePage = () => {
       <SignatureFood />
       <DiningExperience />
       <VoicesOfSatisfaction />
-      <GetInTouch />
+      <GetInTouchContainer />
     </div>
   );
 };

@@ -25,3 +25,17 @@ body {
   width: 400px;
   height: 400px;
 }
+
+.bgImageBlob {
+  background: url("/blob1.svg");
+  background-position: left;
+  background-size: 1300px;
+
+  @media screen and (max-width: 1004px) {
+    background-position: center;
+    background-size: 110%;
+    width: 100%;
+    /* width: 10%;
+  height: 400px; */
+  }
+}
