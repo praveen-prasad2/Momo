@@ -13,10 +13,10 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex md:text-[20px] text-[15px]  text-white gap-3 items-center justify-center">
-          <button className="px-5 md:px-10  py-3 bg-momo-primary rounded-3xl hover:bg-opacity-70 font-semibold">
+          <button className="px-4 md:px-10 text-[13px] md:text-[20px] py-3 bg-momo-primary rounded-3xl hover:bg-opacity-70 font-semibold">
             Order Now
           </button>
-          <button className="px-5 md:px-10 py-3 flex items-center justify-center gap-2 hover:opacity-90 hover:bg-momo-black hover:bg-opacity-[0.3] rounded-3xl font-semibold">
+          <button className="px-4 md:px-10 py-3  text-[13px] md:text-[20px]  flex items-center justify-center gap-2 hover:opacity-90 hover:bg-momo-black hover:bg-opacity-[0.3] rounded-3xl font-semibold">
             <FaPlay />
             Menu
           </button>

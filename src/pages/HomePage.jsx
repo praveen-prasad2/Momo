@@ -5,10 +5,11 @@ import SignatureFood from "../components/Homepage/SignatureFood";
 import DiningExperience from "../components/Homepage/DiningExperience";
 import VoicesOfSatisfaction from "../components/Homepage/VoicesOfSatisfaction";
 import GetInTouchContainer from "../components/Homepage/GetInTouchContainer";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
-    <div className="text-blue h-[500vh]">
+    <div className="">
       <Hero />
       <AboutMomoWagon />
       <SignatureFood />

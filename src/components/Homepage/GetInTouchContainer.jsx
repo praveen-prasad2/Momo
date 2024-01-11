@@ -4,7 +4,10 @@ import GetInTouch from "./GetInTouch";
 
 const GetInTouchContainer = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center ">
+    <div
+      id="#contact"
+      className="flex flex-col lg:flex-row items-center justify-center gap-20 md:gap-0"
+    >
       <GetInTouch />
       <ContactForm />
     </div>

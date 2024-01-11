@@ -4,7 +4,9 @@ const AboutMomoWagon = () => {
   return (
     <div className="mt-32 h-[500p]">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-[30px] text-momo-red font-bold">About MomoWagon</h1>
+        <h1 className=" text-2xl md:text-3xl text-momo-red font-bold">
+          About MomoWagon
+        </h1>
       </div>
       {/* <div className='absolute -right-[500px] overflow-hidden hidden -z-10 lg:flex'>
         <Image className='' src={"/blob1.svg"} width={1000} height={1000} alt='Image' />

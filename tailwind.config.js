@@ -13,11 +13,24 @@ module.exports = withMT({
         "momo-black": "#030405",
       },
       backgroundImage: {
-        'hero-image': 'url("./public/hero-momos.jpg")', // Use 'url()' to specify image path
+        'hero-image': 'url("./public/hero-momos.jpg")',
+        'yellow-blob': 'url("./public/blob1.svg")',
+        'red-blob': 'url("./public/blob2.svg")',
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      backgroundSize: {
+        'auto': 'auto',
+        'cover': 'cover',
+        'contain': 'contain',
+        '50%': '50%',
+        '16': '4rem',
+        '1400px': '1400px',
+        '110': '110%',
+        '500': '500%'
+
+      }
     },
   },
   plugins: [],

@@ -1,24 +1,61 @@
 import React, { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
+import DrawerBar from "./Homepage/Drawer";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
-  const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(true);
+
+  const location = useLocation();
+
+  const allBlack = location.pathname === "/" ? "text-white" : "text-black";
+
+  const whiteLogo = location.pathname === "/" ? true : false;
+
+  console.log(location);
+
   return (
-    <div className="flex h-[100px] items-center justify-between px-5">
-      <img src={"/MomoWagonWhite.png"} height={130} width={130} alt="Logo" />
+    <div className="flex h-[100px] items-center justify-between md:px-5 px-3">
+      <Link to={"/"}>
+        {whiteLogo ? (
+          <img src={"/MomoWagonWhite.png"} className="w-[120px]" alt="Logo" />
+        ) : (
+          <img
+            src={"/momoWagonBlack.png"}
+            className="w-[100px] mt-2"
+            alt="Logo"
+          />
+        )}
+      </Link>
+
       <div className="text-white hidden lg:flex font-semibold text-[20px] lg:text-[25px] px-10">
-        <ul className="flex items-center justify-center gap-10">
-          <li className="cursor-pointer">Home</li>
-          <li className="cursor-pointer">About Us</li>
-          <li className="cursor-pointer">Menu</li>
-          <li className="cursor-pointer">Contact</li>
-          <li className="cursor-pointer">Company</li>
-          <li className="cursor-pointer">Contact</li>
-        </ul>
+        <div className={`flex items-center justify-center gap-10 ${allBlack}`}>
+          <Link to={"/"} className="cursor-pointer">
+            Home
+          </Link>
+          <Link to={"/about-us"} className="cursor-pointer">
+            About Us
+          </Link>
+          <Link to={"/menu"} className="cursor-pointer">
+            Menu
+          </Link>
+          <Link to={"#contact"} className="cursor-pointer">
+            Contact
+          </Link>
+          <Link to={"/team"} className="cursor-pointer">
+            Team
+          </Link>
+          <Link to={"/company"} className="cursor-pointer">
+            Company
+          </Link>
+        </div>
       </div>
-      <div className="text-white flex items-center justify-center lg:hidden">
-        {!isMenuOpen ? <IoMenu size={50} /> : <IoMdClose size={50} />}
+      <div
+        className="text-white flex items-center justify-center lg:hidden "
+        onClick={() => setMenuOpen(true)}
+      >
+        <DrawerBar isMenuOpen={isMenuOpen} />
       </div>
     </div>
   );
