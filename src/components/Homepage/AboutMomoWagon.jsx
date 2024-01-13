@@ -12,7 +12,7 @@ const AboutMomoWagon = () => {
         <Image className='' src={"/blob1.svg"} width={1000} height={1000} alt='Image' />
       </div> */}
       <div className="px-5 py-3 md:px-20 md:py-20">
-        <p>
+        <p className="break-all">
           Experience culinary excellence with Momo Wagon, a pioneering venture
           led by young entrepreneurs from Kerala. Meticulously researched and
           artfully crafted, our freshly made Himalayan momos redefine

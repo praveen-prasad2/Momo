@@ -2,9 +2,9 @@ import React from "react";
 
 const Company = () => {
   return (
-    <div className="flex items-center flex-col justify-between md:px-10 px-2 gap-4 mb-5">
+    <div className="flex items-center flex-col justify-between lg:px-10 md:px-5 px-4 gap-4 mb-5">
       <div className="flex items-center justify-between">
-        <div className="flex items-center justify-center flex-col gap-3 px-10 lg:w-3/4">
+        <div className="flex items-center justify-center flex-col gap-3  lg:w-3/4">
           <h1 className="text-momo-red text-[30px] font-bold">Company</h1>
           <p className="break-all">
             Welcome to Weirdly Wonderful Foods, the innovative force reshaping
@@ -67,13 +67,13 @@ const Company = () => {
       <div className="flex items-center justify-center gap-3">
         <img
           src="/public/food-truck.jpg"
-          className="px-2 hidden lg:flex h-[300px]"
+          className="px-2 hidden lg:flex h-[300px] rounded-3xl"
           alt="FoodTruck"
         />
         <img
           src="/public/food-truck.jpg"
           alt="FoodTruck"
-          className="px-2 h-[300px]"
+          className="px-2 md:h-[300px] h-[200px] rounded-3xl"
         />
       </div>
     </div>

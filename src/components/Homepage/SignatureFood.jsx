@@ -1,6 +1,7 @@
 import React from "react";
 import SignatureFoodCard from "./SignatureFoodCard";
 import { Carousel } from "antd";
+import signatureMomos from "../../utils/signatureMomos";
 
 const contentStyle = {
   height: "160px",
@@ -21,26 +22,18 @@ const SignatureFood = () => {
       <div className="flex items-center justify-center">
         <div className="lg:hidden flex items-center justify-center">
           <Carousel arrows className="w-[280px]" autoplay infinite>
-            <div style={contentStyle}>
-              <SignatureFoodCard />
-            </div>
-            <div>
-              <SignatureFoodCard />
-            </div>
-            <div>
-              <SignatureFoodCard />
-            </div>
-            <div>
-              <SignatureFoodCard />
-            </div>
+            {signatureMomos.map((item) => (
+              <div key={item.id}>
+                <SignatureFoodCard item={item} />
+              </div>
+            ))}
           </Carousel>
         </div>
 
-        <div className="lg:flex gap-4 items-center justify-center  flex-wrap hidden ">
-          <SignatureFoodCard />
-          <SignatureFoodCard />
-          <SignatureFoodCard />
-          <SignatureFoodCard />
+        <div className="lg:flex gap-4 items-center justify-center flex-wrap hidden">
+          {signatureMomos.map((item) => (
+            <SignatureFoodCard key={item.id} item={item} />
+          ))}
         </div>
       </div>
     </div>

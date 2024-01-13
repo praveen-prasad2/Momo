@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+document.title = "MomoWagon - About";
+
 const AboutUs = () => {
   const [showFullText, setShowFullText] = useState(false);
 
@@ -50,7 +52,7 @@ const AboutUs = () => {
         </div>
         <div className="bg-red-blob bg-110 w-1/4 mask-container hidden lg:flex">
           <img
-            src="/public/close-up-delicious-asian-food.jpg"
+            src="/close-up-delicious-asian-food.jpg"
             className="vc-image-1"
             alt=""
           />

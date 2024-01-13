@@ -1,5 +1,6 @@
 import React from "react";
 import ProfileCard from "../components/Team/ProfileCard";
+import teamData from "../utils/teamData";
 
 const Team = () => {
   return (
@@ -22,12 +23,9 @@ const Team = () => {
         </p>
       </div>
       <div className="flex  items-center flex-wrap justify-center gap-3 mt-10 lg:px-32 md:px-16 px-8">
-        <ProfileCard />
-        <ProfileCard />
-        <ProfileCard />
-        <ProfileCard />
-        <ProfileCard />
-        <ProfileCard />
+        {teamData.map((profile, i) => (
+          <ProfileCard key={i} profile={profile} />
+        ))}
       </div>
     </div>
   );

@@ -5,7 +5,9 @@ import SignatureFood from "../components/Homepage/SignatureFood";
 import DiningExperience from "../components/Homepage/DiningExperience";
 import VoicesOfSatisfaction from "../components/Homepage/VoicesOfSatisfaction";
 import GetInTouchContainer from "../components/Homepage/GetInTouchContainer";
-import Footer from "../components/Footer";
+
+
+document.title = "MomoWagon";
 
 const HomePage = () => {
   return (
